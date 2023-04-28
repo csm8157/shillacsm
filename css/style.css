@@ -1,0 +1,235 @@
+@charset "UTF-8" ;
+@import url(reset.css);
+
+* {margin: 0;padding: 0;}
+html,body{font-size: 12px;}
+h1,h2,h3,h4,h5,h6{font-size: 100%;}
+ol,ul{list-style: none;}
+a{text-decoration: none; color: inherit;  display: block;}
+span{
+  display: inline-block;
+}
+img{display: block;}
+address{font-style: normal;}
+table{border-collapse: collapse;}
+button{border: none;
+        background: transparent;}
+
+#wrap{
+  width: 100%;
+  min-width: 1100px;
+}
+.boxalign{
+  width: 1100px;
+  margin: auto;
+}
+
+/* HEADR */
+header{
+  padding: 1.5rem 0;
+  
+}
+header .boxalign{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+header .logo{}
+header .log h1{
+  padding: 1.2rem 0;
+}
+header .log h1 a{}
+header .log h1 a img{}
+
+header nav{
+  display: flex;
+  gap: 5rem ;
+}
+header nav div{
+  border-bottom: 4px solid transparent;
+  padding-bottom: 1rem;
+}
+header nav div a{
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 1rem 0 1rem;
+  
+}
+header nav div:hover{
+  color:#ffce00;
+  border-bottom: 4px solid;
+}
+
+/* MAIN */
+main{
+  position: relative;
+  overflow: hidden;
+  transition: .7s;
+}
+main .mbg{
+  background:url("../images/main_bg.jpg")  center;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  transition: .7s;
+}
+main:hover .mbg{
+  transform: scale(1.2);
+}
+main .mtext{
+  position: absolute;
+  background: #000000a8;
+  top: 0;
+  bottom: 0;
+  left: 15%;
+  color: #fff;
+  padding: 3rem;
+  transition: .7s;
+}
+
+main .mtext:hover{
+  left: 10%;
+  padding: 4rem;
+}
+
+main .mtext h2{
+  font-size: 2.2rem;
+}
+main .mtext span{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  margin: 2rem 0;
+  border-radius: 50%;
+}
+main:hover .mtext span{
+  background-color: #ffce00;
+  width: 50px;
+  border-radius: 0;
+  height: 4px;
+  
+}
+main .mtext p{
+  font-size: 1.3rem;
+  margin-bottom: 10rem;
+  line-height: 1.6;
+}
+main .mtext a{
+  display: inline-block;
+  padding: 1rem;
+  border: 1px solid ;
+  font-size: 1.2rem;
+  transition: .7s;
+}
+main .mtext a:hover{
+  background-color: #fff;
+  color: #000000;
+}
+
+/* SECTION */
+section{
+  padding: 5rem 0 ;
+}
+section ul{
+  display: flex;
+  gap: 25px;
+}
+section ul li{
+  width: 350px;
+}
+section ul li:first-child{
+  background: #ffce00;
+  height: 350px;
+  padding: 30px;
+  width: 290px;
+}
+section ul li h3{
+  font-size: 1.9rem;
+}
+section ul li > span{
+  display: block;
+  width: 1px;
+  height: 100px;
+  background: #000;
+  margin: 2rem 1rem;
+
+}
+section ul li p{
+  font-size: 1.2rem;
+  letter-spacing: -1.5px;
+  line-height: 1.5;
+}
+
+section ul li a{
+  display: block;
+}
+section ul li a span{
+  display: block;
+}
+.imgbox img{
+  width: 100%;
+}
+section ul li a span.textbox{
+  background: #eee;
+  padding: 30px;
+  transition: .5s;
+  border-bottom: 5px solid #000;
+}
+section ul li a span.textbox{
+  border-bottom: #ffce00;
+}
+.textbox strong{
+  display: block;
+  font-size: 1.4rem;
+  letter-spacing: -1px;
+}
+.textbox .whycover{
+  display: flex;
+  margin-top: 5.3rem;
+}
+.whycover .wcbg{
+  background: url(../images/btn_link.png);
+  width: 20px;
+  height: 20px;
+  background-size: 40px;
+  transition: .5s;
+}
+.whycover i{
+  display: block;
+  font-style: normal;
+  margin-left: 1rem;
+}
+section li:hover .wcbg{
+  background-position: right;
+}
+section li:hover .textbox{
+  border-bottom-color: #ffce00;
+}
+section li:hover .wcbg{
+  background-position: right;
+}
+section li:hover .textbox{
+  border-bottom-color: #ffce00;
+}
+/* FOOTER */
+footer{
+  background: #ffce00;
+  padding: 4rem 0;
+}
+footer ul{
+  display: flex;
+  width: 534px;
+  margin: auto;
+  gap: 2rem;
+}
+footer ul li a{
+  display: block;
+  font-size: 1.1rem;
+}
+footer address{
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 3rem;
+  padding-top: 3rem;
+}
